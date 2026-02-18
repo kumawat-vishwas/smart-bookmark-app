@@ -3,6 +3,20 @@
 ### Introduction
 Smart Bookmark App is a web application built with Next.js and Supabase, designed to help users manage and organize bookmarks efficiently. It features a dashboard for easy access and management, leveraging modern web technologies for a seamless experience.
 
+### Challenges Faced
+
+During development, several challenges were encountered:
+
+- **Authentication Integration:** Integrating Supabase authentication with Next.js required careful handling of session management and protecting routes. This was solved by using Supabase client libraries and Next.js middleware to manage user sessions securely.
+
+- **State Management:** Managing global state for user data and bookmarks was initially complex. The solution involved leveraging React context and hooks to maintain and update state efficiently across components.
+
+- **Responsive UI:** Ensuring the dashboard and bookmark lists were responsive across devices required multiple iterations. Using CSS modules and utility-first CSS frameworks improved layout consistency.
+
+- **Environment Configuration:** Setting up environment variables for different environments (development, production) led to some confusion. Creating clear documentation and using `.env.example` as a template streamlined the setup process.
+
+Each challenge contributed to a more robust and maintainable application.
+
 ### Folder Structure
 ```
 smart-bookmark-app/
